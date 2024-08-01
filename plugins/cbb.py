@@ -39,7 +39,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                     ]
                 ]
             )
-
+        )
 @Client.on_message(filters.command("bought") & filters.private)
 async def bought(client, message):
     msg = await message.reply('Wait im checking...')
